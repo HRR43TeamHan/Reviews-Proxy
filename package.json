@@ -1,0 +1,24 @@
+{
+  "name": "reviews-proxy",
+  "version": "1.0.0",
+  "description": "TripAvisor HRR43-FEC Proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRR43TeamHan/Reviews-Proxy.git"
+  },
+  "author": "Jordan J. Heskett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HRR43TeamHan/Reviews-Proxy/issues"
+  },
+  "homepage": "https://github.com/HRR43TeamHan/Reviews-Proxy#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  }
+}
