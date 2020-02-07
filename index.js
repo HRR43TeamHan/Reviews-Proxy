@@ -61,7 +61,7 @@ app.get('/api/carousel/:id', (req, res) => {
 app.get('/api/about/:id', (req, res) => {
   axios.get(`http://localhost:${ABOUT_PORT}${req.url}`)
   .then(response => response.data)
-  .then(data => res.send({data}))
+  .then(data => res.send(data))
   .catch(err => console.log('error at proxy serving about',err));
 });
 
