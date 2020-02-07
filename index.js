@@ -44,7 +44,7 @@ const static = `
 
 
 app.post('/api/booking/:id', (req, res) => {
-  axios.post(`http://localhost:${BOOKING_PORT}${req.url}`, {...req.body})
+  axios.post(`http://${BOOKING_HOSTNAME}:${BOOKING_PORT}${req.url}`, {...req.body})
   .then(response => response.data)
   .then(data => res.send(data))
   .catch(err => console.log('error at proxy serving about',err));
@@ -52,21 +52,21 @@ app.post('/api/booking/:id', (req, res) => {
 
 
 app.get('/api/carousel/:id', (req, res) => {
-  axios.get(`http://localhost:${CAROUSEL_PORT}${req.url}`)
+  axios.get(`http://${CAROUSEL_HOSTNAME}:${CAROUSEL_PORT}${req.url}`)
   .then(response => response.data)
   .then(data => res.send(data))
   .catch(err => console.log('error at proxy serving about',err));
 });
 
 app.get('/api/about/:id', (req, res) => {
-  axios.get(`http://localhost:${ABOUT_PORT}${req.url}`)
+  axios.get(`http://${ABOUT_HOSTNAME}:${ABOUT_PORT}${req.url}`)
   .then(response => response.data)
   .then(data => res.send(data))
   .catch(err => console.log('error at proxy serving about',err));
 });
 
 app.get('/api/reviews/:id', (req, res) => {
-  axios.get(`http://localhost:${REVIEWS_PORT}${req.url}`)
+  axios.get(`http://${REVIEWS_HOSTNAME}:${REVIEWS_PORT}${req.url}`)
   .then(response => response.data)
   .then(data => res.send(data))
   .catch(err => console.log('error at proxy serving about',err));
