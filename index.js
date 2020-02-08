@@ -24,21 +24,22 @@ const static = `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://file.myfontastic.com/U8sGaLdnvhHsK7t6kuKpPn/icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4723f324c2.js" crossorigin="anonymous">
     <title>HRR43 FEC TeamHan!</title>
   </head>
   <body>
+  <div style="margin: 0 6% 0 6%;">
     <div style="display:flex">
-    <div id="booking" ></div>
-    <div id="carousel" ></div>
+      <div id="booking" ></div>
+      <div id="carousel" ></div>
     </div>
     <div id="about"></div>
     <div id="reviews"></div>
-
+  </div>
     <script src="http://${BOOKING_HOSTNAME}:${BOOKING_PORT}/bundle.js" ></script>
     <script src="http://${CAROUSEL_HOSTNAME}:${CAROUSEL_PORT}/bundle.js" ></script>
     <script src="http://${ABOUT_HOSTNAME}:${ABOUT_PORT}/bundle.js" ></script>
     <script src="http://${REVIEWS_HOSTNAME}:${REVIEWS_PORT}/bundle.js" ></script>
-
   </body>
 </html>`
 
