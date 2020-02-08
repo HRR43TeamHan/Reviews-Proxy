@@ -23,8 +23,8 @@ const static = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://file.myfontastic.com/U8sGaLdnvhHsK7t6kuKpPn/icons.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4723f324c2.js" crossorigin="anonymous">
+    <link href="https://file.myfontastic.com/U8sGaLdnvhHsK7t6kuKpPn/icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4723f324c2.js" crossorigin="anonymous" />
     <title>HRR43 FEC TeamHan!</title>
   </head>
   <body>
