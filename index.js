@@ -23,6 +23,7 @@ const static = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://file.myfontastic.com/U8sGaLdnvhHsK7t6kuKpPn/icons.css" rel="stylesheet">
     <title>HRR43 FEC TeamHan!</title>
   </head>
   <body>
