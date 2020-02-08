@@ -27,9 +27,10 @@ const static = `
     <title>HRR43 FEC TeamHan!</title>
   </head>
   <body>
-
+    <div style={{display: "flex"}}
     <div id="booking"></div>
     <div id="carousel"></div>
+    </div>
     <div id="about"></div>
     <div id="reviews"></div>
 
