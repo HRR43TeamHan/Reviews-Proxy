@@ -29,12 +29,12 @@ const static = `
     </head>
     <body>
     <div style="margin: 0 6% 0 6%;">
-    <div style="display:flex">
+    <div style="display: flex">
     <div id="booking" ></div>
     <div id="carousel" ></div>
     </div>
     <div id="about"></div>
-    <div id="reviews"></div>
+    <div id="reviews" style="margin-top: 12px"></div>
     </div>
     <script src="http://${BOOKING_HOSTNAME}:${BOOKING_PORT}/bundle.js" ></script>
     <script src="http://${CAROUSEL_HOSTNAME}:${CAROUSEL_PORT}/bundle.js" ></script>
@@ -43,7 +43,11 @@ const static = `
   </body>
 </html>`
 
-
+app.get('/styles', (req, res) => {
+  axios.get(`http://${REVIEWS_HOSTNAME}:${REVIEWS_PORT}${req.url}`)
+  .then(response => response.data)
+  .then(data => res.send(data))
+})
 
 app.post('/api/booking/:id', (req, res) => {
   axios.post(`http://${BOOKING_HOSTNAME}:${BOOKING_PORT}${req.url}`, {...req.body})
