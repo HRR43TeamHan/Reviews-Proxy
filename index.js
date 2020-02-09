@@ -23,7 +23,7 @@ const static = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="/styles/style.css" rel="stylesheet" />
+    <link href="/12/styles/style.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/4723f324c2.js" crossorigin="anonymous"></script>
     <title>HRR43 FEC TeamHan!</title>
     </head>
@@ -43,7 +43,7 @@ const static = `
   </body>
 </html>`
 
-app.get('/styles', (req, res) => {
+app.get(':id/styles', (req, res) => {
   axios.get(`http://${REVIEWS_HOSTNAME}:${REVIEWS_PORT}${req.url}`)
   .then(response => response.data)
   .then(data => res.send(data))
