@@ -43,7 +43,7 @@ const static = `
   </body>
 </html>`
 
-app.get(':id/styles', (req, res) => {
+app.get('/:id/styles/:file', (req, res) => {
   axios.get(`http://${REVIEWS_HOSTNAME}:${REVIEWS_PORT}${req.url}`)
   .then(response => response.data)
   .then(data => res.send(data))
